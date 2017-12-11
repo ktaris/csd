@@ -1,0 +1,23 @@
+{
+    "name" : "ktaris/csd",
+    "description" : "Conjunto de clases para la lectura de CSD del SAT, en México",
+    "keywords" : [
+        "csd",
+        "sat"
+    ],
+    "type" : "library",
+    "license" : "MIT License",
+    "authors" : [{
+            "name" : "Carlos Ramos",
+            "email" : "carlos@ramoscarlos.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+    },
+    "autoload" : {
+        "psr-4" : {
+            "ktaris\\csd\\" : ""
+        }
+    }
+}
