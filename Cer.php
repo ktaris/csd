@@ -149,30 +149,24 @@ trait Cer
 
     public function getValidoDesde()
     {
-        $timestamp = $this->getValidoDesdeTimeStamp();
+        $timestamp = $this->getValidoDesdeTimestamp();
 
         return date('Y/m/d H:i:s', $timestamp);
     }
 
     public function getValidoHasta()
     {
-        $timestamp = $this->getValidoHastaTimeStamp();
+        $timestamp = $this->getValidoHastaTimestamp();
 
         return date('Y/m/d H:i:s', $timestamp);
     }
 
-    // ==================================================================
-    //
-    // Atributos protegidos, base para los atributos públicos.
-    //
-    // ------------------------------------------------------------------
-
-    protected function getValidoDesdeTimeStamp()
+    public function getValidoDesdeTimestamp()
     {
         return $this->_propiedades['validFrom_time_t'] + 0;
     }
 
-    protected function getValidoHastaTimeStamp()
+    public function getValidoHastaTimestamp()
     {
         return $this->_propiedades['validTo_time_t'] + 0;
     }
