@@ -84,6 +84,15 @@ trait Cer
         return $this->_propiedades;
     }
 
+    public function leerPropiedad($nombreDePropiedad)
+    {
+        if (!array_key_exists($nombreDePropiedad, $this->_propiedades)) {
+            return null;
+        }
+
+        return $this->_propiedades[$nombreDePropiedad];
+    }
+
     /**
      * Genera el archivo *.cer.pem en base al archivo definido en
      * [[archivo_cer]], para ser almacenado en [[archivo_cer_pem]],
